@@ -1,4 +1,4 @@
-package main
+﻿package main
 
 import (
 	"github.com/golang/protobuf/proto"
@@ -241,3 +241,5 @@ var msgEventNameOverrides = map[dm.EDOTAGCMsg]string{
 	dm.EDOTAGCMsg_k_EMsgGCOtherJoinedChannel:             "PlayerJoinedChannel",
 	dm.EDOTAGCMsg_k_EMsgGCOtherLeftChannel:               "PlayerLeftChannel",
 }
+
+
