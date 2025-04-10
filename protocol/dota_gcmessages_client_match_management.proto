@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "steammessages.proto";
 import "dota_shared_enums.proto";
@@ -469,3 +470,4 @@ message CMsgClientToGCMMInfo {
 	optional uint32 lane_selection_flags = 1;
 	optional bool high_priority_disabled = 2;
 }
+

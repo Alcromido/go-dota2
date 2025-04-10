@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "steammessages.proto";
 import "dota_shared_enums.proto";
@@ -303,3 +304,4 @@ message CMsgClientToGCCandyShopDevGrantRerollChargesResponse {
 
 	optional CMsgClientToGCCandyShopDevGrantRerollChargesResponse.EResponse response = 1 [default = k_eInternalError];
 }
+

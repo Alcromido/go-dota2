@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "dota_shared_enums.proto";
 
@@ -565,3 +566,4 @@ message CMsgClientToGCFantasyCraftingRerollOptionsResponse {
 	optional CMsgClientToGCFantasyCraftingRerollOptionsResponse.EResponse response = 1 [default = k_eInternalError];
 	optional CMsgDotaFantasyCraftingUserData user_data = 2;
 }
+

@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "dota_shared_enums.proto";
 
@@ -652,3 +653,4 @@ message CMsgClientToGCRequestAccountGuildPersonaInfoBatchResponse {
 	optional CMsgClientToGCRequestAccountGuildPersonaInfoBatchResponse.EResponse result = 1 [default = k_eInternalError];
 	repeated CMsgAccountGuildsPersonaInfo persona_infos = 2;
 }
+

@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "valveextensions.proto";
 
@@ -295,3 +296,4 @@ message CMsgBotWorldState {
 	repeated CMsgBotWorldState.EventRoshanKilled roshan_killed_events = 23;
 	repeated CMsgBotWorldState.EventTree tree_events = 24;
 }
+

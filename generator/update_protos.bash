@@ -47,7 +47,7 @@ cp ${REPO_PROTOS}/valve_extensions.proto ${WORK_DIR}/orig/
 # Add package lines to each protobuf file.
 for f in ${WORK_DIR}/orig/*.proto ; do
     fname=$(basename $f)
-    printf 'syntax = "proto2";\npackage protocol;\n\n' |\
+    printf 'syntax = "proto2";\npackage protocol;\noption go_package = "./;protocol";\n\n' |\
         cat - $f |\
         sed -e "s/optional \./optional /g" \
             -e "s/required \./required /g" \
@@ -65,5 +65,4 @@ cd ${WORK_DIR}/protos
 protoc -I $(pwd) --go_out=. $(pwd)/*.proto
 
 # Move final files out.
-rsync -rv --delete $(pwd)/ ${REPO_ROOT}/protocol/
-
+rsync -rv --delete $(pwd)/ ${REPO_ROOT}/protocol/ 

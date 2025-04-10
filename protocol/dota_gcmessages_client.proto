@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "steammessages.proto";
 import "dota_shared_enums.proto";
@@ -3336,3 +3337,4 @@ message CMsgLobbyRoadToTIMatchQuestData {
 	optional uint32 quest_period = 2;
 	optional uint32 quest_number = 3;
 }
+

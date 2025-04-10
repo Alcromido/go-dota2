@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "steammessages.proto";
 import "steammessages_steamlearn.steamworkssdk.proto";
@@ -489,3 +490,4 @@ message CMsgGCToGCMasterDestroyCache {
 	optional uint32 soid_type = 1;
 	optional fixed64 soid_id = 2;
 }
+

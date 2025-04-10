@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "base_gcmessages.proto";
 import "dota_gcmessages_common_match_management.proto";
@@ -347,3 +348,4 @@ message CDOTAMatchPrivateMetadata {
 	repeated float graph_win_probability = 2;
 	repeated CDOTAMatchPrivateMetadata.StringName string_names = 3;
 }
+

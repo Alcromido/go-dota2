@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "steammessages.proto";
 import "econ_shared_enums.proto";
@@ -993,3 +994,4 @@ message CMsgGCToGCUpdateWelcomeMsg {
 	optional CExtraMsgBlock new_msg = 2;
 	optional bool broadcast = 3;
 }
+

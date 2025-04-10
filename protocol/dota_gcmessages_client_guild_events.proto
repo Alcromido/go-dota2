@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "dota_shared_enums.proto";
 
@@ -232,3 +233,4 @@ message CMsgClientToGCClaimLeaderboardRewardsResponse {
 	optional CMsgClientToGCClaimLeaderboardRewardsResponse.EResponse result = 1 [default = k_eInternalError];
 	optional uint32 event_points = 2;
 }
+

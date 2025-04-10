@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "steammessages.proto";
 import "valveextensions.proto";
@@ -1533,3 +1534,4 @@ message CMsgSignOutMapStats {
 	repeated CMsgSignOutMapStats.Player players = 1;
 	optional CMsgMapStatsSnapshot global_stats = 2;
 }
+

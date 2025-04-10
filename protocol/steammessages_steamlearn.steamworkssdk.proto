@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "steammessages_unified_base.steamworkssdk.proto";
 
@@ -358,3 +359,5 @@ service SteamLearn {
 		option (method_description) = "Requests the metadata that was generated from a specified fetch.";
 	}
 }
+
+

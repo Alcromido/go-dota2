@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "steammessages.proto";
 import "dota_shared_enums.proto";
@@ -393,3 +394,4 @@ message CMsgLocalServerFakeLobbyData {
 	optional uint32 teleport_fx_level = 8;
 	optional CMsgAdditionalLobbyStartupAccountData additional_data = 9;
 }
+

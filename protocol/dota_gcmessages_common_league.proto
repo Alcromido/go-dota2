@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 import "dota_shared_enums.proto";
 
@@ -352,3 +353,4 @@ message CMsgDOTADPCSeasonSpoilerResults {
 	optional uint32 time_last_updated = 1;
 	optional CMsgDOTADPCSeasonResults saved_results = 2;
 }
+

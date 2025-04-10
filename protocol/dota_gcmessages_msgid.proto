@@ -1,5 +1,6 @@
 syntax = "proto2";
 package protocol;
+option go_package = "./;protocol";
 
 enum EDOTAGCMsg {
 	k_EMsgGCDOTABase = 7000;
@@ -888,3 +889,4 @@ enum EDOTAGCMsg {
 	k_EMsgClientToGCRoadToTIDevForceQuest = 8935;
 	k_EMsgLobbyRoadToTIMatchQuestData = 8939;
 }
+
