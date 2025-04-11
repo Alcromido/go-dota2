@@ -27,6 +27,4 @@ require (
 	golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f // indirect
 )
 
-replace github.com/paralin/go-steam => github.com/Alcromido/go-steam v0.0.0-20250410000000-b83540c32d4042bd44b9061f4c4c2f50d837c1d6
-
-
+replace github.com/paralin/go-steam => github.com/Alcromido/go-steam v0.0.0-20250410132619-b83540c32d40
