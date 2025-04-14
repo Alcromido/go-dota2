@@ -1,4 +1,4 @@
-module github.com/paralin/go-dota2
+﻿module github.com/paralin/go-dota2
 
 go 1.21
 
@@ -28,3 +28,4 @@ require (
 )
 
 replace github.com/paralin/go-steam => github.com/Alcromido/go-steam v0.0.0-20250410132619-b83540c32d40
+
