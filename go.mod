@@ -1,15 +1,17 @@
-module github.com/paralin/go-dota2
+﻿module github.com/paralin/go-dota2
 
 go 1.21
 
 // note: protobuf is intentionally held at 1.3.x
-replace github.com/golang/protobuf => github.com/aperturerobotics/go-protobuf-1.3.x v0.0.0-20200726220404-fa
 
-replace github.com/paralin/go-steam => github.com/Alcromido/go-steam v0.0.0-20250410132619-b83540c32d40
+replace github.com/paralin/go-steam => github.com/Alcromido/go-steam v0.0.0-20250417033232-9c9428f35bd0
 
 require (
+	github.com/fatih/camelcase v1.0.0
 	github.com/golang/protobuf v1.5.4
 	github.com/paralin/go-steam v0.0.0-20250410132619-b83540c32d40
+	github.com/pkg/errors v0.9.1
+	github.com/serenize/snaker v0.0.0-20201027110005-a7ad2135616e
 	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli/v2 v2.27.5
 	google.golang.org/protobuf v1.36.0
