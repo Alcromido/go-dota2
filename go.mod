@@ -1,4 +1,4 @@
-﻿module github.com/paralin/go-dota2
+module github.com/paralin/go-dota2
 
 go 1.21
 
